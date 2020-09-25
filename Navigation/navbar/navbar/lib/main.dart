@@ -59,7 +59,7 @@ class _FirstScreenState extends State<FirstScreen> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.person), title: Text('')),
           ],
-          type: BottomNavigationBarType.shifting,
+          type: BottomNavigationBarType.fixed,
           iconSize: 25,
           currentIndex: _index,
           onTap: _onItemTapped,
