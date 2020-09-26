@@ -109,9 +109,9 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Container(
                 alignment: Alignment.centerRight,
-                padding: new EdgeInsets.symmetric(horizontal: 20),
-                child: Text('0', style: TextStyle(fontSize: 48.0))),
-            Expanded(child: Divider()),
+                padding: new EdgeInsets.symmetric(horizontal: 20,vertical: 100.0),
+                child: Text(output, style: TextStyle(fontSize: 48.0))),
+            Expanded(child: Divider(color: Colors.transparent,)),
             Column(children: [
               Row(
                 children: <Widget>[
@@ -126,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   buildButton('4'),
                   buildButton('5'),
                   buildButton('6'),
-                  buildButton('x'),
+                  buildButton('X'),
                 ],
               ),
               Row(
