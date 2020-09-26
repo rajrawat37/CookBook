@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_app/drawers.dart';
 import 'package:music_app/navbar.dart';
-import 'package:music_app/loginbutton.dart';
 import 'package:music_app/logincard.dart';
 
 void main() {
@@ -45,9 +44,10 @@ class _MainPageState extends State<MainPage> {
                 textColor: Colors.white,
                 color: Colors.blue,
                 child: Text('Go to NextPage'),
-                onPressed: () {
-                  navigateToSubPage(context);
-                },
+                onPressed: (){},
+                // onPressed: () {
+                //   navigateToSubPage(context);
+                // },
               ),
                Text('Click button to move to CardsPage'),
               RaisedButton(
@@ -66,9 +66,9 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
-  Future navigateToSubPage(context) async {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => SubPage()));
-  }
+  // Future navigateToSubPage(context) async {
+  //   Navigator.push(context, MaterialPageRoute(builder: (context) => SubPage()));
+  // }
   Future navigateToSecondPage(context) async {
     Navigator.push(context, MaterialPageRoute(builder: (context) => SecondPage()));
   }
