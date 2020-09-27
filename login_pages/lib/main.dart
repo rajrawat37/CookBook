@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: <Widget>[ 
               Text('Click button to move to ButtonsPage'),
               RaisedButton(
                 textColor: Colors.white,
