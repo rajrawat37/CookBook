@@ -26,6 +26,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   void slidingsheet() {
     showModalBottomSheet(
+      enableDrag: true,
+      
         context: context,
         builder: (context) {
           return Container(
@@ -47,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[Text('Tas2')],
+                    children: <Widget>[Text('Task2')],
                   )
                 ],
               ),
